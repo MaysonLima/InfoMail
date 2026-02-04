@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoMail - O seu correspondente de noticias</title>
+    
     <link rel="stylesheet" href="/CSS/style_global.css">
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
 
@@ -13,10 +15,17 @@
         <h1>InfoMail</h1>
 
         <nav class="navegation">
+           
           <a href="#">Inicio</a>
           <a href="#">Sobre</a>
           <a href="#">Cadastrar</a>
           <a href="#">Torne-se um parceiro</a>
+
+         <div class="pesquisa">
+            <input type="search" placeholder="Pesquisar" id=""> 
+            <i class="fa fa-search"></i>
+           
+        </div>
 
         </nav>
 
@@ -24,12 +33,40 @@
 
     <div>
         <main>
+            <form action="#" class="formulario">
+             <div class="container">
+                 <label for="inome">Nome:</label>
+                             <input type="text" placeholder="Digite o seu nome">
+             </div>
+
+             <div class="container">
+                 <label for="ilocal">Localização:</label>
+                 <input type="text" placeholder="Digite a sua localização">
+             </div>
+
+             <div class="container">
+                 <label for="iemail">E-mail:</label>
+                             <input type="email" placeholder="Digite o seu E-mail">
+             </div>
+
+            <div class="opcoes">
+                <select name="" id="">
+                    <option value="TECNOLOGIA">Tecnologia</option>
+                    <option value="RELIGIAO">Religião</option>
+                    <option value="FINANCAS">Finanças</option>
+                    <option value="ESPORTE">Esporte</option>
+                    <option value="POLITICA">Política</option>
+                </select>
+            </div>
+
+            <input type="submit">
+            </form>
         </main>
     </div>
     
     <footer>
         <p>2025 InfoMail -  a open source project</p>
-        <p>Developer by <a href="#"><spam>Mayson Lima</spam></a></p>
+        <p>Developer by <a href="#" id="footer_link"><spam>Mayson Lima</spam></a></p>
     </footer>
     
 </body>

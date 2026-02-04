@@ -42,12 +42,13 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: var(--bg-main);
 }
 
 header{
-    background-color: bisque;
-    color: white;
+    background-color: var(--primary-color);
     padding: 20px;
+    color: var(--text-light);
 }
 
 header h1{
@@ -60,6 +61,44 @@ header h1{
     flex-wrap: wrap;
 }
 
+nav a{
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+nav a:hover{
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.pesquisa{
+    position: relative;
+    left: 100vh;
+    height: 10px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.pesquisa i{
+    color: #F8FAFC;
+}
+
+.pesquisa input{
+    background-color: var(--primary-hover);
+}
+
+.pesquisa ::placeholder{
+    color: #FFFFFF;
+}
+
+.search{
+padding: 8px 12px;
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
 main{
     flex: 1;
     padding: 30px 15px;
@@ -68,9 +107,46 @@ main{
 
 }
 
+.formulario{
+   background: white;
+   padding: 20px;
+   border-radius: 5px;
+
+}
+
+input, select, button{
+    width:100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input, select{
+    border: 1px solid #ccc;
+
+}
+
+button{
+    background: var(--secondary-color);
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--secondary-hover);
+}
+
 footer{
     text-align: center;
     background-color: rgb(202, 197, 191);
     padding: 15px;
     font-size: 14px;
 }
+
+#footer_link{
+    text-decoration: none;
+    color: var(--bg-dark);
+    font-weight: bold;
+}
+
