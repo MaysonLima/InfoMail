@@ -87,59 +87,8 @@ header h1 {
     margin-bottom: 10px;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-/* Links */
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links li a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 8px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--footer-text);
-}
-
-/* Menu toggle */
-
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Pesquisa */
-
-.pesquisa {
-    display: flex;
-    height: 10px;
-}
-
-
-.pesquisa i {
-    color: #F8FAFC;
+.logo{
+    text-align: center;
 }
 
 /* =====================
@@ -155,48 +104,6 @@ nav a:hover {
     .menu-toggle {
         display: block;
         color: white;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 110%;
-        right: 1rem;
-
-        flex-direction: column;
-        width: 230px;
-        padding: 10px;
-
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 10px 25px rgba(0,0,0,.15);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li a {
-        color: var(--text-primary);
-        padding: 10px 12px;
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-links li a:hover {
-        color: var(--text-secondary);
-    }
-
-    .pesquisa {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-    }
-
-    .pesquisa input {
-        width: 130px;
-        padding: 6px 8px;
-        font-size: 0.85rem;
     }
 }
 
